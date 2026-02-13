@@ -1,0 +1,81 @@
+.second-container {
+  width: 100%;
+  min-height: 200vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: #f5f5f0;
+}
+
+.second-left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+
+.anchor-box {
+  width: 120px;
+  height: 120px;
+  font-family: 'DM Serif Display';
+  box-shadow: #f5f5f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 25px;
+  background: white;
+}
+
+.second-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  will-change: transform, opacity;
+}
+
+.design-text {
+  position: absolute;
+  top: 140px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  will-change: transform, opacity;
+}
+
+.second-right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-card {
+  width: 100%;
+  max-width: 600px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #b8c9e8 100%);
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  will-change: transform, opacity;
+}
+
+.design-image {
+  position: absolute;
+  top: 0;
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+}

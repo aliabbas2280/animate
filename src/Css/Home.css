@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing-container {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.nav-item {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-section {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+
+.left-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.icon-box {
+  width: 113px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box img {
+  width: 113px;
+}
+
+.text-stack {
+  position: relative;
+  min-height: 260px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-1,
+.content-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.content-2 {
+  opacity: 0;
+  transform: translateY(50px) scale(0.95);
+  filter: blur(4px);
+}
+
+.change-content .content-1 {
+  opacity: 0;
+  transform: translateY(-50px) scale(0.95);
+  filter: blur(4px);
+}
+
+.change-content .content-2 {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+}
+
+.appstore-btn {
+  width: 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.appstore-btn img {
+  width: 150px;
+}
+
+/* RIGHT SIDE */
+
+.right-content {
+  max-width: 674px;
+  width: 100%;
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  background: #d5dfef;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.mobile-frame {
+  width: 320px;
+  height: 620px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.phone-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hide-frame .phone-frame {
+  opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+.images-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.images-wrapper .img {
+  transition: all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.large {
+  width: 260px;
+  height: 150px;
+}
+
+.small {
+  width: 168px;
+  height: 168px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+
+.animate-images .img1 {
+  position: absolute;
+  top: 0;
+  left: -45px;
+  transform: translate(-50%, -50%) scale(1.05);
+  transition-delay: 0.1s;
+}
+
+.animate-images .img2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 520px;
+  height: 380px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-delay: 0.2s;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.animate-images .img3 {
+  position: absolute;
+  bottom: 0;
+  right: -45px;
+  transform: translate(55%, 55%) scale(1.05);
+  transition-delay: 0.15s;
+}
+
+.animate-images .pet {
+  bottom: -20px;
+  left: -170px;
+  transition-delay: 0.25s;
+}
+
+.input-wrapper {
+  display: flex;
+  background: #fff;
+  border-radius: 50px;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border: 1px solid #f0f0f0;
+  max-width: 420px;
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-wrapper input::placeholder {
+  color: #999;
+}
+
+.input-wrapper button {
+  padding: 12px 32px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input-wrapper button:hover {
+  background: #333;
+  transform: scale(1.05);
+}

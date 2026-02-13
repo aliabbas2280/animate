@@ -1,0 +1,349 @@
+@media (max-width: 1200px) {
+  .landing-container {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .main-section {
+    padding: 20px;
+    height: auto;
+    min-height: calc(100vh - 80px);
+  }
+  
+  .left-content {
+    width: 45%;
+  }
+  
+  .left-content h1 {
+    font-size: 28px;
+  }
+  
+  .right-content {
+    max-width: 550px;
+    height: 550px;
+  }
+  
+  .mobile-frame {
+    width: 280px;
+    height: 560px;
+  }
+  
+  .large {
+    width: 220px;
+    height: 130px;
+  }
+  
+  .animate-images .img2 {
+    width: 420px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing-container {
+    padding: 15px;
+  }
+  
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    height: auto;
+    min-height: auto;
+    padding: 20px;
+  }
+  
+  .left-content {
+    width: 100%;
+    max-width: 600px;
+    gap: 30px;
+  }
+  
+  .left-content h1 {
+    font-size: 26px;
+  }
+  
+  .text-stack {
+    min-height: 220px;
+  }
+  
+  .right-content {
+    max-width: 500px;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .mobile-frame {
+    width: 260px;
+    height: 520px;
+  }
+  
+  .images-wrapper {
+    padding: 20px;
+  }
+  
+  .large {
+    width: 200px;
+    height: 120px;
+  }
+  
+  .small {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .animate-images .img1 {
+    left: -20px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .animate-images .img2 {
+    width: 350px;
+    height: 250px;
+  }
+  
+  .animate-images .img3 {
+    right: -20px;
+    transform: translate(55%, 55%) scale(1);
+  }
+  
+  .animate-images .pet {
+    left: -120px;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-container {
+    padding: 10px;
+  }
+  
+  .navbar {
+    padding: 10px 15px;
+  }
+  
+  .main-section {
+    padding: 15px;
+    gap: 30px;
+  }
+  
+  .left-content {
+    max-width: 100%;
+  }
+  
+  .left-content h1 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  
+  .text-stack {
+    min-height: 200px;
+  }
+  
+  .right-content {
+    max-width: 100%;
+    height: 420px;
+    border-radius: 40px;
+  }
+  
+  .mobile-frame {
+    width: 220px;
+    height: 440px;
+  }
+  
+  .images-wrapper {
+    padding: 15px;
+  }
+  
+  .large {
+    width: 170px;
+    height: 100px;
+  }
+  
+  .small {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .animate-images .img1 {
+    left: -15px;
+  }
+  
+  .animate-images .img2 {
+    width: 280px;
+    height: 200px;
+  }
+  
+  .animate-images .img3 {
+    right: -15px;
+  }
+  
+  .animate-images .pet {
+    left: -90px;
+    bottom: -10px;
+  }
+  
+  .input-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing-container {
+    padding: 8px;
+  }
+  
+  .navbar {
+    padding: 8px 10px;
+  }
+  
+  .nav-item {
+    font-size: 16px;
+  }
+  
+  .main-section {
+    padding: 10px;
+    gap: 25px;
+  }
+  
+  .left-content h1 {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  
+  .text-stack {
+    min-height: 180px;
+  }
+  
+  .icon-box {
+    width: 90px;
+  }
+  
+  .icon-box img {
+    width: 90px;
+  }
+  
+  .appstore-btn img {
+    width: 120px;
+  }
+  
+  .right-content {
+    max-width: 100%;
+    height: 350px;
+    border-radius: 30px;
+  }
+  
+  .mobile-frame {
+    width: 180px;
+    height: 360px;
+  }
+  
+  .images-wrapper {
+    padding: 10px;
+  }
+  
+  .large {
+    width: 140px;
+    height: 85px;
+  }
+  
+  .small {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .animate-images .img1 {
+    left: -10px;
+    transform: translate(-40%, -40%) scale(0.95);
+  }
+  
+  .animate-images .img2 {
+    width: 220px;
+    height: 160px;
+  }
+  
+  .animate-images .img3 {
+    right: -10px;
+    transform: translate(40%, 40%) scale(0.95);
+  }
+  
+  .animate-images .pet {
+    left: -70px;
+    bottom: -8px;
+  }
+  
+  .input-wrapper {
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px;
+  }
+  
+  .input-wrapper input {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  
+  .input-wrapper button {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .landing-container {
+    padding: 5px;
+  }
+  
+  .navbar {
+    padding: 8px;
+  }
+  
+  .main-section {
+    padding: 8px;
+  }
+  
+  .left-content h1 {
+    font-size: 18px;
+  }
+  
+  .text-stack {
+    min-height: 160px;
+  }
+  
+  .icon-box {
+    width: 80px;
+  }
+  
+  .icon-box img {
+    width: 80px;
+  }
+  
+  .right-content {
+    height: 300px;
+    border-radius: 25px;
+  }
+  
+  .mobile-frame {
+    width: 150px;
+    height: 310px;
+  }
+  
+  .large {
+    width: 115px;
+    height: 70px;
+  }
+  
+  .small {
+    width: 75px;
+    height: 75px;
+  }
+  
+  .animate-images .img2 {
+    width: 180px;
+    height: 130px;
+  }
+  
+  .animate-images .pet {
+    left: -55px;
+  }
+}

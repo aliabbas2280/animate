@@ -1,0 +1,101 @@
+@media (max-width: 992px) {
+  .floating-img img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .anchor-logo {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+  }
+  
+  .anchor-tagline {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .anchor-page {
+    padding: 20px;
+  }
+  
+  .floating-img img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .anchor-center {
+    max-width: 500px;
+  }
+  
+  .anchor-logo {
+    width: 90px;
+    height: 90px;
+    font-size: 18px;
+  }
+  
+  .anchor-tagline {
+    font-size: 22px;
+    margin-bottom: 25px;
+  }
+  
+  .anchor-form {
+    max-width: 100%;
+  }
+  
+  .anchor-input, .anchor-btn {
+    font-size: 14px;
+    padding: 14px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .floating-img img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .img-2, .img-3, .img-8, .img-9, .img-11, .img-12 {
+    display: none;
+  }
+  
+  .anchor-center {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  
+  .anchor-logo {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+  
+  .anchor-tagline {
+    font-size: 20px;
+  }
+  
+  .anchor-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .anchor-input {
+    border-radius: 30px;
+  }
+  
+  .anchor-btn {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .floating-img img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .anchor-tagline {
+    font-size: 18px;
+  }
+}

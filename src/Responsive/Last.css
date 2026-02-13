@@ -1,101 +1,493 @@
-@media (max-width: 992px) {
-  .floating-img img {
-    width: 90px;
-    height: 90px;
+/* Extra Large Screens */
+@media (min-width: 1920px) {
+  .anchor-center {
+    max-width: 700px;
+    padding: 50px;
   }
   
   .anchor-logo {
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
+    width: 150px;
+    height: 150px;
+    font-size: 28px;
   }
   
   .anchor-tagline {
-    font-size: 24px;
+    font-size: 32px;
+  }
+  
+  .floating-img img {
+    width: 130px;
+    height: 130px;
   }
 }
 
-@media (max-width: 768px) {
-  .anchor-page {
-    padding: 20px;
-  }
-  
+/* Large Desktops */
+@media (max-width: 1400px) {
   .floating-img img {
-    width: 70px;
-    height: 70px;
+    width: clamp(90px, 7vw, 100px);
+    height: clamp(90px, 7vw, 100px);
   }
   
   .anchor-center {
-    max-width: 500px;
-  }
-  
-  .anchor-logo {
-    width: 90px;
-    height: 90px;
-    font-size: 18px;
+    max-width: 580px;
+    padding: clamp(30px, 3vw, 35px);
   }
   
   .anchor-tagline {
-    font-size: 22px;
-    margin-bottom: 25px;
+    font-size: clamp(24px, 2vw, 26px);
+  }
+}
+
+/* Medium Desktops */
+@media (max-width: 1200px) {
+  .anchor-page {
+    padding: clamp(25px, 2.5vw, 30px) clamp(15px, 2vw, 20px);
+  }
+  
+  .floating-img img {
+    width: clamp(85px, 8vw, 95px);
+    height: clamp(85px, 8vw, 95px);
+  }
+  
+  .anchor-center {
+    max-width: 90%;
+    padding: clamp(30px, 3vw, 35px);
+  }
+  
+  .anchor-logo {
+    width: clamp(100px, 10vw, 110px);
+    height: clamp(100px, 10vw, 110px);
+    font-size: clamp(21px, 2vw, 23px);
+  }
+  
+  .anchor-tagline {
+    font-size: clamp(24px, 2.2vw, 26px);
+  }
+  
+  .anchor-form {
+    max-width: 90%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .anchor-page {
+    padding: clamp(20px, 2.5vw, 25px) clamp(12px, 1.5vw, 15px);
+  }
+  
+  .floating-img img {
+    width: clamp(75px, 9vw, 85px);
+    height: clamp(75px, 9vw, 85px);
+  }
+  
+  .img-2, .img-3 {
+    right: 20%;
+  }
+  
+  .img-8, .img-9 {
+    left: 20%;
+  }
+  
+  .img-11, .img-12 {
+    left: 20%;
+  }
+  
+  .anchor-center {
+    max-width: 85%;
+    padding: clamp(28px, 3.5vw, 35px);
+    gap: clamp(16px, 2vw, 18px);
+  }
+  
+  .anchor-logo {
+    width: clamp(90px, 11vw, 100px);
+    height: clamp(90px, 11vw, 100px);
+    font-size: clamp(19px, 2.2vw, 21px);
+  }
+  
+  .anchor-tagline {
+    font-size: clamp(22px, 2.5vw, 24px);
+    line-height: 1.4;
   }
   
   .anchor-form {
     max-width: 100%;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
   }
   
-  .anchor-input, .anchor-btn {
-    font-size: 14px;
-    padding: 14px 20px;
+  .anchor-input {
+    padding: clamp(13px, 1.5vw, 15px) clamp(18px, 2vw, 22px);
+    font-size: clamp(14px, 1.5vw, 15px);
+  }
+  
+  .anchor-btn {
+    padding: clamp(13px, 1.5vw, 15px) clamp(24px, 2.5vw, 28px);
+    font-size: clamp(14px, 1.5vw, 15px);
   }
 }
 
-@media (max-width: 576px) {
+/* Small Tablets */
+@media (max-width: 768px) {
+  .anchor-page {
+    padding: clamp(15px, 2.5vw, 20px) clamp(10px, 1.5vw, 12px);
+    min-height: 100vh;
+  }
+  
   .floating-img img {
-    width: 60px;
-    height: 60px;
+    width: clamp(65px, 10vw, 75px);
+    height: clamp(65px, 10vw, 75px);
+  }
+  
+  .img-2 {
+    right: 18%;
+    top: 15%;
+  }
+  
+  .img-3 {
+    right: 8%;
+    top: 25%;
+  }
+  
+  .img-5 {
+    right: 8%;
+    bottom: 25%;
+  }
+  
+  .img-6 {
+    right: 18%;
+    bottom: 15%;
+  }
+  
+  .img-8 {
+    left: 18%;
+    top: 15%;
+  }
+  
+  .img-9 {
+    left: 8%;
+    top: 25%;
+  }
+  
+  .img-11 {
+    left: 8%;
+    bottom: 25%;
+  }
+  
+  .img-12 {
+    left: 18%;
+    bottom: 15%;
+  }
+  
+  .anchor-center {
+    max-width: 92%;
+    padding: clamp(25px, 4vw, 30px);
+    gap: clamp(14px, 2vw, 16px);
+  }
+  
+  .anchor-logo {
+    width: clamp(80px, 12vw, 90px);
+    height: clamp(80px, 12vw, 90px);
+    font-size: clamp(17px, 2.5vw, 19px);
+  }
+  
+  .anchor-tagline {
+    font-size: clamp(20px, 3vw, 22px);
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .anchor-form {
+    max-width: 100%;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  
+  .anchor-input {
+    padding: clamp(12px, 2vw, 14px) clamp(16px, 2.5vw, 20px);
+    font-size: clamp(13px, 1.8vw, 14px);
+  }
+  
+  .anchor-btn {
+    padding: clamp(12px, 2vw, 14px) clamp(20px, 3vw, 24px);
+    font-size: clamp(13px, 1.8vw, 14px);
+  }
+}
+
+/* Mobile Landscape / Large Phones */
+@media (max-width: 576px) {
+  .anchor-page {
+    padding: clamp(12px, 2.5vw, 15px) clamp(8px, 1.5vw, 10px);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .floating-img img {
+    width: clamp(55px, 12vw, 65px);
+    height: clamp(55px, 12vw, 65px);
   }
   
   .img-2, .img-3, .img-8, .img-9, .img-11, .img-12 {
     display: none;
   }
   
+  .img-1 {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img-4 {
+    right: 5%;
+    top: 30%;
+  }
+  
+  .img-5 {
+    bottom: 20%;
+    right: 10%;
+  }
+  
+  .img-6 {
+    bottom: 20%;
+    left: 10%;
+  }
+  
+  .img-7 {
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .img-10 {
+    left: 5%;
+    top: 30%;
+  }
+  
   .anchor-center {
-    max-width: 100%;
-    padding: 0 15px;
+    max-width: 95%;
+    width: 100%;
+    padding: clamp(20px, 4vw, 25px) clamp(15px, 3vw, 18px);
+    gap: clamp(12px, 2.5vw, 15px);
+    border-radius: clamp(16px, 3vw, 18px);
   }
   
   .anchor-logo {
-    width: 80px;
-    height: 80px;
-    font-size: 16px;
+    width: clamp(75px, 15vw, 85px);
+    height: clamp(75px, 15vw, 85px);
+    font-size: clamp(16px, 3vw, 18px);
+    border-radius: clamp(8px, 2vw, 10px);
   }
   
   .anchor-tagline {
-    font-size: 20px;
+    font-size: clamp(18px, 4vw, 20px);
+    line-height: 1.5;
+    text-align: center;
   }
   
   .anchor-form {
     flex-direction: column;
-    gap: 10px;
+    gap: clamp(10px, 2vw, 12px);
+    box-shadow: none;
+    background: transparent;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .anchor-input {
-    border-radius: 30px;
+    border-radius: clamp(20px, 4vw, 25px);
+    padding: clamp(12px, 2.5vw, 14px) clamp(16px, 3vw, 20px);
+    font-size: clamp(13px, 2.5vw, 14px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
   }
   
   .anchor-btn {
-    border-radius: 30px;
+    width: 100%;
+    border-radius: clamp(20px, 4vw, 25px);
+    padding: clamp(12px, 2.5vw, 14px) clamp(16px, 3vw, 20px);
+    font-size: clamp(13px, 2.5vw, 14px);
   }
 }
 
 @media (max-width: 400px) {
+  .anchor-page {
+    padding: clamp(10px, 2vw, 12px) clamp(6px, 1.5vw, 8px);
+  }
+  
   .floating-img img {
-    width: 50px;
-    height: 50px;
+    width: clamp(45px, 13vw, 55px);
+    height: clamp(45px, 13vw, 55px);
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+  }
+  
+  .anchor-center {
+    padding: clamp(18px, 4.5vw, 22px) clamp(12px, 3vw, 15px);
+    gap: clamp(10px, 2.5vw, 12px);
+    border-radius: clamp(14px, 3vw, 16px);
+  }
+  
+  .anchor-logo {
+    width: clamp(65px, 16vw, 75px);
+    height: clamp(65px, 16vw, 75px);
+    font-size: clamp(14px, 3.5vw, 16px);
   }
   
   .anchor-tagline {
-    font-size: 18px;
+    font-size: clamp(16px, 4.5vw, 18px);
+    line-height: 1.6;
+  }
+  
+  .anchor-input {
+    padding: clamp(10px, 2.5vw, 12px) clamp(14px, 3.5vw, 18px);
+    font-size: clamp(12px, 3vw, 13px);
+  }
+  
+  .anchor-btn {
+    padding: clamp(10px, 2.5vw, 12px) clamp(14px, 3.5vw, 18px);
+    font-size: clamp(12px, 3vw, 13px);
+  }
+}
+
+@media (max-width: 350px) {
+  .floating-img img {
+    width: clamp(40px, 14vw, 48px);
+    height: clamp(40px, 14vw, 48px);
+  }
+  
+  .img-4, .img-10 {
+    opacity: 0.7;
+  }
+  
+  .anchor-center {
+    padding: clamp(16px, 5vw, 20px) clamp(10px, 3vw, 12px);
+    gap: clamp(8px, 2.5vw, 10px);
+  }
+  
+  .anchor-logo {
+    width: clamp(60px, 18vw, 70px);
+    height: clamp(60px, 18vw, 70px);
+    font-size: clamp(13px, 4vw, 15px);
+  }
+  
+  .anchor-tagline {
+    font-size: clamp(15px, 5vw, 17px);
+    line-height: 1.6;
+  }
+  
+  .anchor-input {
+    padding: clamp(9px, 2.5vw, 11px) clamp(12px, 4vw, 16px);
+    font-size: clamp(11px, 3.5vw, 12px);
+  }
+  
+  .anchor-btn {
+    padding: clamp(9px, 2.5vw, 11px) clamp(12px, 4vw, 16px);
+    font-size: clamp(11px, 3.5vw, 12px);
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .anchor-page {
+    padding: clamp(10px, 2vh, 15px);
+    overflow-y: auto;
+  }
+  
+  .floating-img img {
+    width: clamp(40px, 8vh, 50px);
+    height: clamp(40px, 8vh, 50px);
+  }
+  
+  .img-1, .img-7, .img-5, .img-6 {
+    display: none;
+  }
+  
+  .img-4 {
+    top: 20%;
+  }
+  
+  .img-10 {
+    top: 20%;
+  }
+  
+  .anchor-center {
+    padding: clamp(15px, 3vh, 20px) clamp(20px, 4vw, 30px);
+    gap: clamp(8px, 2vh, 10px);
+    max-width: 600px;
+  }
+  
+  .anchor-logo {
+    width: clamp(60px, 12vh, 70px);
+    height: clamp(60px, 12vh, 70px);
+    font-size: clamp(14px, 3vh, 16px);
+  }
+  
+  .anchor-tagline {
+    font-size: clamp(16px, 3.5vh, 18px);
+    line-height: 1.3;
+  }
+  
+  .anchor-form {
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .anchor-input {
+    padding: clamp(8px, 2vh, 10px) clamp(14px, 2vw, 16px);
+    font-size: clamp(12px, 2.5vh, 13px);
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .anchor-btn {
+    width: auto;
+    padding: clamp(8px, 2vh, 10px) clamp(16px, 3vw, 20px);
+    font-size: clamp(12px, 2.5vh, 13px);
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 2560px) {
+  .anchor-center {
+    max-width: 800px;
+    padding: 60px;
+  }
+  
+  .anchor-logo {
+    width: 170px;
+    height: 170px;
+    font-size: 32px;
+  }
+  
+  .anchor-tagline {
+    font-size: 36px;
+  }
+  
+  .floating-img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .anchor-center {
+    max-width: 70%;
+  }
+  
+  .floating-img img {
+    width: clamp(70px, 8vw, 90px);
+    height: clamp(70px, 8vw, 90px);
   }
 }

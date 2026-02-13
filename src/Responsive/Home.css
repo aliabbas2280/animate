@@ -1,3 +1,21 @@
+/* Large Desktops */
+@media (max-width: 1400px) {
+  .main-section {
+    padding: clamp(30px, 4vw, 40px);
+  }
+  
+  .left-content h1 {
+    font-size: clamp(32px, 3vw, 36px);
+  }
+  
+  .right-content {
+    max-width: min(600px, 90vw);
+    height: auto;
+    min-height: 600px;
+  }
+}
+
+/* Medium Desktops */
 @media (max-width: 1200px) {
   .landing-container {
     height: auto;
@@ -5,345 +23,565 @@
   }
   
   .main-section {
-    padding: 20px;
+    padding: clamp(20px, 3vw, 30px);
     height: auto;
     min-height: calc(100vh - 80px);
+    gap: clamp(30px, 4vw, 40px);
   }
   
   .left-content {
     width: 45%;
+    min-width: 280px;
   }
   
   .left-content h1 {
-    font-size: 28px;
+    font-size: clamp(28px, 2.8vw, 32px);
+    line-height: 1.3;
+  }
+  
+  .text-stack {
+    min-height: clamp(200px, 25vw, 240px);
   }
   
   .right-content {
-    max-width: 550px;
-    height: 550px;
+    max-width: min(550px, 85vw);
+    min-height: 550px;
+    height: auto;
   }
   
   .mobile-frame {
-    width: 280px;
-    height: 560px;
+    width: clamp(240px, 25vw, 280px);
+    height: auto;
+    aspect-ratio: 1/2;
   }
   
   .large {
-    width: 220px;
-    height: 130px;
+    width: clamp(180px, 20vw, 220px);
+    height: auto;
+    aspect-ratio: 22/13;
+  }
+  
+  .small {
+    width: clamp(130px, 15vw, 150px);
+    height: auto;
+    aspect-ratio: 1/1;
   }
   
   .animate-images .img2 {
-    width: 420px;
-    height: 300px;
+    width: 85%;
+    max-width: min(420px, 80vw);
+    height: auto;
+    aspect-ratio: 520/380;
+  }
+  
+  .animate-images .pet {
+    left: clamp(15px, 2.5vw, 25px);
+    bottom: clamp(15px, 2.5vw, 25px);
   }
 }
 
+/* Tablets */
 @media (max-width: 992px) {
   .landing-container {
-    padding: 15px;
+    padding: clamp(10px, 2vw, 15px);
+  }
+  
+  .navbar {
+    padding: 10px clamp(15px, 3vw, 20px);
   }
   
   .main-section {
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: clamp(40px, 6vw, 50px);
     height: auto;
     min-height: auto;
-    padding: 20px;
+    padding: clamp(20px, 4vw, 30px);
   }
   
   .left-content {
     width: 100%;
     max-width: 600px;
-    gap: 30px;
+    gap: clamp(25px, 4vw, 30px);
+    align-items: center;
+    text-align: center;
+  }
+  
+  .appstore-btn {
+    display: flex;
+    justify-content: center;
   }
   
   .left-content h1 {
-    font-size: 26px;
+    font-size: clamp(24px, 3.5vw, 28px);
   }
   
   .text-stack {
-    min-height: 220px;
+    min-height: clamp(180px, 28vw, 220px);
+    width: 100%;
+  }
+  
+  .bottom {
+    align-items: center;
   }
   
   .right-content {
-    max-width: 500px;
+    max-width: min(500px, 95vw);
     width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
   }
   
   .mobile-frame {
-    width: 260px;
-    height: 520px;
+    width: clamp(220px, 30vw, 260px);
+    height: auto;
+    aspect-ratio: 1/2;
   }
   
   .images-wrapper {
-    padding: 20px;
+    padding: clamp(15px, 2.5vw, 20px);
   }
   
   .large {
-    width: 200px;
-    height: 120px;
+    width: clamp(170px, 24vw, 200px);
+    height: auto;
+    aspect-ratio: 5/3;
   }
   
   .small {
-    width: 140px;
-    height: 140px;
+    width: clamp(120px, 18vw, 140px);
+    height: auto;
+    aspect-ratio: 1/1;
+    left: clamp(15px, 2.5vw, 20px);
+    bottom: clamp(15px, 2.5vw, 20px);
   }
   
   .animate-images .img1 {
-    left: -20px;
-    transform: translate(-50%, -50%) scale(1);
+    left: 0;
+    top: 0;
+    transform: translate(-40%, -40%) scale(1);
   }
   
   .animate-images .img2 {
-    width: 350px;
-    height: 250px;
+    width: 85%;
+    max-width: min(350px, 75vw);
+    height: auto;
+    aspect-ratio: 520/380;
   }
   
   .animate-images .img3 {
-    right: -20px;
-    transform: translate(55%, 55%) scale(1);
+    right: 0;
+    bottom: 0;
+    transform: translate(40%, 40%) scale(1);
   }
   
   .animate-images .pet {
-    left: -120px;
-    bottom: -15px;
+    left: clamp(15px, 2.5vw, 20px);
+    bottom: clamp(15px, 2.5vw, 20px);
   }
 }
 
+/* Small Tablets */
 @media (max-width: 768px) {
   .landing-container {
-    padding: 10px;
+    padding: clamp(8px, 1.5vw, 10px);
   }
   
   .navbar {
-    padding: 10px 15px;
+    padding: 10px clamp(12px, 2vw, 15px);
+  }
+  
+  .nav-item {
+    font-size: clamp(15px, 2.2vw, 16px);
   }
   
   .main-section {
-    padding: 15px;
-    gap: 30px;
+    padding: clamp(15px, 3vw, 20px);
+    gap: clamp(30px, 5vw, 40px);
   }
   
   .left-content {
     max-width: 100%;
+    gap: clamp(20px, 3.5vw, 25px);
+  }
+  
+  .appstore-btn {
+    display: flex;
+    justify-content: center;
   }
   
   .left-content h1 {
-    font-size: 22px;
-    line-height: 1.3;
-  }
-  
-  .text-stack {
-    min-height: 200px;
-  }
-  
-  .right-content {
-    max-width: 100%;
-    height: 420px;
-    border-radius: 40px;
-  }
-  
-  .mobile-frame {
-    width: 220px;
-    height: 440px;
-  }
-  
-  .images-wrapper {
-    padding: 15px;
-  }
-  
-  .large {
-    width: 170px;
-    height: 100px;
-  }
-  
-  .small {
-    width: 120px;
-    height: 120px;
-  }
-  
-  .animate-images .img1 {
-    left: -15px;
-  }
-  
-  .animate-images .img2 {
-    width: 280px;
-    height: 200px;
-  }
-  
-  .animate-images .img3 {
-    right: -15px;
-  }
-  
-  .animate-images .pet {
-    left: -90px;
-    bottom: -10px;
-  }
-  
-  .input-wrapper {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 576px) {
-  .landing-container {
-    padding: 8px;
-  }
-  
-  .navbar {
-    padding: 8px 10px;
-  }
-  
-  .nav-item {
-    font-size: 16px;
-  }
-  
-  .main-section {
-    padding: 10px;
-    gap: 25px;
-  }
-  
-  .left-content h1 {
-    font-size: 20px;
+    font-size: clamp(22px, 3.2vw, 24px);
     line-height: 1.4;
   }
   
   .text-stack {
-    min-height: 180px;
+    min-height: clamp(160px, 26vw, 200px);
   }
   
   .icon-box {
-    width: 90px;
+    width: clamp(90px, 13vw, 100px);
   }
   
   .icon-box img {
-    width: 90px;
-  }
-  
-  .appstore-btn img {
-    width: 120px;
+    width: 100%;
   }
   
   .right-content {
     max-width: 100%;
-    height: 350px;
-    border-radius: 30px;
+    min-height: clamp(380px, 55vw, 420px);
+    height: auto;
+    border-radius: clamp(35px, 5vw, 40px);
+    padding: clamp(12px, 2vw, 15px);
   }
   
   .mobile-frame {
-    width: 180px;
-    height: 360px;
+    width: clamp(190px, 29vw, 220px);
+    height: auto;
+    aspect-ratio: 1/2;
   }
   
   .images-wrapper {
-    padding: 10px;
+    padding: clamp(12px, 2vw, 15px);
   }
   
   .large {
-    width: 140px;
-    height: 85px;
+    width: clamp(150px, 22vw, 170px);
+    height: auto;
+    aspect-ratio: 17/10;
   }
   
   .small {
-    width: 90px;
-    height: 90px;
+    width: clamp(100px, 16vw, 120px);
+    height: auto;
+    aspect-ratio: 1/1;
+    left: clamp(15px, 2.5vw, 20px);
+    bottom: clamp(15px, 2.5vw, 20px);
   }
   
   .animate-images .img1 {
-    left: -10px;
-    transform: translate(-40%, -40%) scale(0.95);
+    left: 0;
+    top: 0;
+    transform: translate(-35%, -35%) scale(0.95);
   }
   
   .animate-images .img2 {
-    width: 220px;
-    height: 160px;
+    width: 85%;
+    max-width: min(280px, 70vw);
+    height: auto;
+    aspect-ratio: 520/380;
   }
   
   .animate-images .img3 {
-    right: -10px;
-    transform: translate(40%, 40%) scale(0.95);
+    right: 0;
+    bottom: 0;
+    transform: translate(35%, 35%) scale(0.95);
   }
   
   .animate-images .pet {
-    left: -70px;
-    bottom: -8px;
+    left: clamp(15px, 2.5vw, 20px);
+    bottom: clamp(15px, 2.5vw, 20px);
+  }
+  
+  .input-wrapper {
+    max-width: 100%;
+    flex-direction: row;
+  }
+  
+  .input-wrapper input {
+    font-size: clamp(13px, 1.8vw, 14px);
+    padding: clamp(10px, 1.5vw, 12px) clamp(15px, 2.5vw, 18px);
+  }
+  
+  .input-wrapper button {
+    font-size: clamp(13px, 1.8vw, 14px);
+    padding: clamp(10px, 1.5vw, 12px) clamp(20px, 3vw, 24px);
+  }
+}
+
+/* Mobile Landscape / Large Phones */
+@media (max-width: 576px) {
+  .landing-container {
+    padding: clamp(6px, 1.2vw, 8px);
+  }
+  
+  .navbar {
+    padding: 8px clamp(10px, 2vw, 12px);
+  }
+  
+  .nav-item {
+    font-size: clamp(14px, 2.6vw, 15px);
+  }
+  
+  .main-section {
+    padding: clamp(10px, 2.5vw, 15px);
+    gap: clamp(25px, 5vw, 30px);
+  }
+  
+  .left-content {
+    gap: clamp(15px, 3.5vw, 20px);
+  }
+  
+  .appstore-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .left-content h1 {
+    font-size: clamp(20px, 3.8vw, 22px);
+    line-height: 1.4;
+  }
+  
+  .text-stack {
+    min-height: clamp(140px, 31vw, 180px);
+  }
+  
+  .icon-box {
+    width: clamp(80px, 16vw, 90px);
+  }
+  
+  .icon-box img {
+    width: 100%;
+  }
+  
+  .appstore-btn img {
+    width: clamp(110px, 23vw, 130px);
+  }
+  
+  .right-content {
+    max-width: 100%;
+    min-height: clamp(300px, 62vw, 360px);
+    height: auto;
+    border-radius: clamp(30px, 6vw, 35px);
+    padding: clamp(10px, 2vw, 12px);
+  }
+  
+  .mobile-frame {
+    width: clamp(160px, 33vw, 190px);
+    height: auto;
+    aspect-ratio: 1/2;
+  }
+  
+  .images-wrapper {
+    padding: clamp(10px, 2vw, 12px);
+    gap: clamp(6px, 1.4vw, 8px);
+  }
+  
+  .large {
+    width: clamp(130px, 26vw, 150px);
+    height: auto;
+    aspect-ratio: 5/3;
+  }
+  
+  .small {
+    width: clamp(85px, 17vw, 100px);
+    height: auto;
+    aspect-ratio: 1/1;
+    left: clamp(12px, 2.6vw, 15px);
+    bottom: clamp(12px, 2.6vw, 15px);
+  }
+  
+  .animate-images .img1 {
+    left: 0;
+    top: 0;
+    transform: translate(-30%, -30%) scale(0.9);
+  }
+  
+  .animate-images .img2 {
+    width: 90%;
+    max-width: min(240px, 85vw);
+    height: auto;
+    aspect-ratio: 520/380;
+  }
+  
+  .animate-images .img3 {
+    right: 0;
+    bottom: 0;
+    transform: translate(30%, 30%) scale(0.9);
+  }
+  
+  .animate-images .pet {
+    left: clamp(12px, 2.6vw, 15px);
+    bottom: clamp(12px, 2.6vw, 15px);
   }
   
   .input-wrapper {
     flex-direction: column;
-    gap: 10px;
-    padding: 8px;
+    gap: clamp(8px, 1.7vw, 10px);
+    padding: clamp(6px, 1.4vw, 8px);
+    border-radius: clamp(20px, 4.3vw, 25px);
   }
   
   .input-wrapper input {
-    padding: 10px 15px;
-    font-size: 14px;
+    padding: clamp(10px, 2vw, 12px) clamp(15px, 3vw, 18px);
+    font-size: clamp(13px, 2.4vw, 14px);
+    border-radius: clamp(18px, 3.5vw, 20px);
   }
   
   .input-wrapper button {
     width: 100%;
-    padding: 10px;
+    padding: clamp(10px, 2vw, 12px);
+    border-radius: clamp(18px, 3.5vw, 20px);
+    font-size: clamp(13px, 2.4vw, 14px);
   }
 }
 
+/* Small Mobile */
 @media (max-width: 400px) {
   .landing-container {
-    padding: 5px;
+    padding: clamp(4px, 1.2vw, 5px);
   }
   
   .navbar {
-    padding: 8px;
+    padding: 8px clamp(8px, 2.5vw, 10px);
+  }
+  
+  .nav-item {
+    font-size: clamp(13px, 3.5vw, 14px);
   }
   
   .main-section {
-    padding: 8px;
+    padding: clamp(8px, 3vw, 12px);
+    gap: clamp(20px, 6vw, 25px);
   }
   
   .left-content h1 {
-    font-size: 18px;
+    font-size: clamp(18px, 5vw, 20px);
   }
   
   .text-stack {
-    min-height: 160px;
+    min-height: clamp(120px, 40vw, 160px);
   }
   
   .icon-box {
-    width: 80px;
+    width: clamp(70px, 20vw, 80px);
   }
   
   .icon-box img {
-    width: 80px;
+    width: 100%;
+  }
+  
+  .appstore-btn img {
+    width: clamp(100px, 30vw, 120px);
   }
   
   .right-content {
-    height: 300px;
-    border-radius: 25px;
+    min-height: clamp(260px, 80vw, 320px);
+    height: auto;
+    border-radius: clamp(25px, 7.5vw, 30px);
+    padding: clamp(8px, 2.5vw, 10px);
   }
   
   .mobile-frame {
-    width: 150px;
-    height: 310px;
+    width: clamp(140px, 40vw, 160px);
+    height: auto;
+    aspect-ratio: 16/33;
+  }
+  
+  .images-wrapper {
+    padding: clamp(8px, 2.5vw, 10px);
+    gap: clamp(5px, 1.5vw, 6px);
   }
   
   .large {
-    width: 115px;
-    height: 70px;
+    width: clamp(110px, 32vw, 130px);
+    height: auto;
+    aspect-ratio: 13/8;
   }
   
   .small {
-    width: 75px;
-    height: 75px;
+    width: clamp(70px, 21vw, 85px);
+    height: auto;
+    aspect-ratio: 1/1;
+    left: clamp(10px, 3vw, 12px);
+    bottom: clamp(10px, 3vw, 12px);
+  }
+  
+  .animate-images .img1 {
+    transform: translate(-25%, -25%) scale(0.85);
   }
   
   .animate-images .img2 {
-    width: 180px;
-    height: 130px;
+    width: 90%;
+    max-width: min(200px, 90vw);
+    height: auto;
+    aspect-ratio: 520/380;
+  }
+  
+  .animate-images .img3 {
+    transform: translate(25%, 25%) scale(0.85);
   }
   
   .animate-images .pet {
-    left: -55px;
+    left: clamp(10px, 3vw, 12px);
+    bottom: clamp(10px, 3vw, 12px);
+  }
+  
+  .input-wrapper input {
+    padding: clamp(8px, 2.5vw, 10px) clamp(12px, 3.7vw, 15px);
+    font-size: clamp(12px, 3.2vw, 13px);
+  }
+  
+  .input-wrapper button {
+    padding: clamp(8px, 2.5vw, 10px);
+    font-size: clamp(12px, 3.2vw, 13px);
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 350px) {
+  .left-content h1 {
+    font-size: clamp(16px, 5.1vw, 18px);
+  }
+  
+  .text-stack {
+    min-height: clamp(100px, 40vw, 140px);
+  }
+  
+  .icon-box {
+    width: clamp(60px, 20vw, 70px);
+  }
+  
+  .icon-box img {
+    width: 100%;
+  }
+  
+  .appstore-btn img {
+    width: clamp(95px, 31vw, 110px);
+  }
+  
+  .right-content {
+    min-height: clamp(240px, 80vw, 280px);
+    border-radius: clamp(20px, 7vw, 25px);
+  }
+  
+  .mobile-frame {
+    width: clamp(120px, 40vw, 140px);
+    height: auto;
+    aspect-ratio: 14/29;
+  }
+  
+  .large {
+    width: clamp(95px, 31vw, 110px);
+    height: auto;
+    aspect-ratio: 11/6.5;
+  }
+  
+  .small {
+    width: clamp(60px, 20vw, 70px);
+    height: auto;
+    aspect-ratio: 1/1;
+    left: clamp(8px, 2.8vw, 10px);
+    bottom: clamp(8px, 2.8vw, 10px);
+  }
+  
+  .animate-images .img2 {
+    width: 90%;
+    max-width: min(170px, 90vw);
+  }
+  
+  .animate-images .pet {
+    left: clamp(8px, 2.8vw, 10px);
+    bottom: clamp(8px, 2.8vw, 10px);
   }
 }

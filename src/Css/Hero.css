@@ -1,15 +1,16 @@
 .main-container {
   width: 100%;
-  height: 300vh;
+  min-height: 300vh; /* Changed from height */
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px;
-  font-family: Arial, sans-serif;
+  gap: 40px; /* Add gap */
 }
 
 .left-section {
   width: 40%;
+  min-width: 300px; /* Add minimum */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -17,7 +18,6 @@
   position: sticky;
   top: 80px;
 }
-
 .icon-box {
   font-family: 'DM Serif Display';
   width: 120px;
@@ -54,17 +54,18 @@
 
 .right-section {
   width: 50%;
+  min-width: 400px; /* Add minimum */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .image-container {
   max-width: 674px;
   width: 100%;
-  height: 630px;
+  height: auto; /* Changed from fixed 630px */
+  min-height: 630px; /* Add this */
   position: relative;
   background-color: #dce6f7;
   padding: 20px;
@@ -72,7 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
+  overflow: hidden; /* Changed from visible */
 }
 
 .image-container.step-2 {
@@ -83,14 +84,15 @@
 
 .main-img {
   position: absolute;
-  width: 570px;
-  max-height: 590px;
+  width: 90%; /* Changed from 570px */
+  max-width: 570px; /* Add max */
+  height: auto; /* Let it scale naturally */
+  max-height: 90%; /* Prevent overflow */
   object-fit: contain;
   border-radius: 15px;
   opacity: 0;
   transform: scale(0.7);
 }
-
 .main-img:first-child {
   opacity: 1;
   transform: scale(1);
@@ -118,11 +120,13 @@
 
 .cat {
   width: 170px;
-  top: -20px;
-  right: 100px;
+  top: 20px;     /* Changed from -20px */
+  right: 20px;   /* Changed from 100px */
   animation: floatCat 4s ease-in-out infinite;
   animation-delay: 0.3s;
 }
+
+
 
 @keyframes floatCat {
   0%, 100% { 
@@ -135,10 +139,12 @@
   }
 }
 
+
+
 .dog {
   width: 250px;
-  bottom: -40px;
-  left: 180px;
+  bottom: -30px;  
+  left: 90px;    
   animation: floatDog 4.5s ease-in-out infinite;
   animation-delay: 0.5s;
 }
@@ -157,7 +163,7 @@
 
 .cat-match {
   top: auto !important;
-  left: 0 !important;
+  left: 10 !important;
   bottom: 0 !important;
   transform: rotate(720deg) scale(1.15) !important;
   animation: matchPulse 2s ease-in-out infinite !important;
@@ -180,4 +186,12 @@
   50% { 
     transform: scale(1.2) rotate(5deg);
   }
+}
+
+.image-container {
+  overflow: hidden; 
+}
+
+.right-content {
+  overflow: hidden; 
 }

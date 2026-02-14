@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../Css/Home.Css";
+import "../Css/Home.css";
 import "../Responsive/Home.css";
 import Logo from "../images/Logo.png";
 import PhoneFrame from "../images/phoneFrame.png";

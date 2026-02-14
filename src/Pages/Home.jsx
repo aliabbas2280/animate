@@ -5,7 +5,7 @@ import Logo from "../images/Logo.png";
 import PhoneFrame from "../images/phoneFrame.png";
 import AppStore from "../images/AppStore.png";
 import Club from "../images/Club.png";
-import Musem from "../images/musem.png";
+import Musem from "../images/Musem.png";
 import Cafe from "../images/Cafe.png";
 import Bablo from "../images/bablo.png";
 

@@ -7,7 +7,7 @@ import AppStore from "../images/AppStore.png";
 import Club from "../images/Club.png";
 import Musem from "../images/Musem.png";
 import Cafe from "../images/Cafe.png";
-import Bablo from "../images/bablo.png";
+import Bablo from "../images/Bablo.png";
 
 const Home = () => {
   useEffect(() => {

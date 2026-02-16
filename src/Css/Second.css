@@ -1,6 +1,6 @@
 .second-container {
   width: 100%;
-  min-height: 200vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
